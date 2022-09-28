@@ -1,6 +1,6 @@
 {% set name = "requests-ratelimiter" %}
-{% set version = "0.3.2" %}
-{% set hash_val = "5bec149645b549135dadb701f8e0a97ecc3dcd40fa6504d55a68cc99e62a89af" %}
+{% set version = "0.4.0" %}
+{% set hash_val = "4fcd71bd75488409329bb4e7baad8df98efec2c3a5d34ad4388d84cd35eeda8d" %}
 
 
 package:
@@ -22,9 +22,9 @@ requirements:
     - poetry
     - pip
   run:
-    - python >=3.6,<4.0
-    - pyrate-limiter >=2.3
-    - requests >=2.20,<3.0
+    - python >=3.7,<4.0
+    - pyrate-limiter >=2.8
+    - requests >=2.20
 
 test:
   imports:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/JWCook/requests-ratelimiter
-  summary: Rate-limiting for the requests library
+  summary: Easy rate-limiting for python requests
   license: MIT
   license_file: LICENSE
   doc_url: https://requests-ratelimiter.readthedocs.io
