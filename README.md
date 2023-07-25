@@ -1,13 +1,13 @@
-About requests-ratelimiter
-==========================
+About requests-ratelimiter-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/requests-ratelimiter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/JWCook/requests-ratelimiter
 
 Package license: MIT
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/requests-ratelimiter-feedstock/blob/main/LICENSE.txt)
-
-Summary: Rate-limiting for the requests library
+Summary: Easy rate-limiting for python requests
 
 Development: https://github.com/JWCook/requests-ratelimiter
 
