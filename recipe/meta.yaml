@@ -12,7 +12,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,7 +23,7 @@ requirements:
     - pip
   run:
     - python >=3.7,<4.0
-    - pyrate-limiter >=2.8
+    - pyrate-limiter >=2.8,<3.0
     - requests >=2.20
 
 test:
