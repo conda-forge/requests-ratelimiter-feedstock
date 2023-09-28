@@ -1,6 +1,6 @@
 {% set name = "requests-ratelimiter" %}
-{% set version = "0.4.1" %}
-{% set hash_val = "254a2565947517016a1dadba51d778d26639a7bbc4114445c667b6d46e899836" %}
+{% set version = "0.4.2" %}
+{% set hash_val = "7b804c9484617e3e7c372eba81b9dedfe6d34904d1ceb8b7c4a4f3b864dc0dbd" %}
 
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
