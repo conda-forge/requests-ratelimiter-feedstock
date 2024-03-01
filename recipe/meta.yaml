@@ -1,6 +1,6 @@
 {% set name = "requests-ratelimiter" %}
-{% set version = "0.5.1" %}
-{% set hash_val = "271617ee804a3848f14e351a9f7bee8bfd4c823663f1d94cf914ec7c8ef0cffe" %}
+{% set version = "0.6.0" %}
+{% set hash_val = "ad72f033323df3c1012a3ac4bb91be36606741f58ec9faede62b89b475ea99f6" %}
 
 
 package:
