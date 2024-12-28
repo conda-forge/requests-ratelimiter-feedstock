@@ -8,21 +8,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ hash_val }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python {{ python_min }}
     - poetry
     - pip
   run:
-    - python >=3.7,<4.0
+    - python >={{ python_min }},<4.0
     - pyrate-limiter >=2.8,<3.0
     - requests >=2.20
 
@@ -31,6 +31,7 @@ test:
     - requests_ratelimiter
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
