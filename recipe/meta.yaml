@@ -22,7 +22,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }},<4.0
-    - pyrate-limiter >=4.0
+    - pyrate-limiter >=4.0.2
     - requests >=2.20
 
 test:
